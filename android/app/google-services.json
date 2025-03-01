@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "490782963360",
+    "project_id": "api-tutorial-9b4d1",
+    "storage_bucket": "api-tutorial-9b4d1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490782963360:android:c648f178766a343643fbc5",
+        "android_client_info": {
+          "package_name": "com.example.api_tutorial"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn09avY8t_4L_xz9TDVNI6c43xMdJG3Sc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
