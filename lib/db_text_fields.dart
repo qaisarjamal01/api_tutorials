@@ -85,7 +85,7 @@ class _DbTextFieldsState extends State<DbTextFields> {
                   child: Center(child: Text('Insert',style: TextStyle(color: Colors.white,fontSize: 20),)),
                 ),
               ),
-              SizedBox(height: 20,),
+              SizedBox(height: 20),
               InkWell(
                 onTap: (){
                   DatabaseHandler().readData();
