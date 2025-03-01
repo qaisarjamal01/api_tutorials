@@ -1,2 +1,0 @@
-D:/OneDrive/Documents/GitHub/api_tutorials/android/app/.cxx/Debug/3f1lvk2r/armeabi-v7a/CMakeFiles/edit_cache.dir
-D:/OneDrive/Documents/GitHub/api_tutorials/android/app/.cxx/Debug/3f1lvk2r/armeabi-v7a/CMakeFiles/rebuild_cache.dir
