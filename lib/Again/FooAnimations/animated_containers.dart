@@ -24,7 +24,7 @@ class _AnimatedContainersState extends State<AnimatedContainers> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Foo Animations'),
+        title: const Text('Foo Animations'),
         centerTitle: true,
         backgroundColor: Colors.blue,
       ),
@@ -37,8 +37,8 @@ class _AnimatedContainersState extends State<AnimatedContainers> {
                 height: _height,
                 curve: Curves.slowMiddle,
                 decoration: myDec,
-                duration: Duration(seconds: 2)),
-            SizedBox(height: 15,),
+                duration: const Duration(seconds: 2)),
+            const SizedBox(height: 15,),
             ElevatedButton(onPressed: (){
               setState(() {
                 if(flag){
@@ -59,7 +59,7 @@ class _AnimatedContainersState extends State<AnimatedContainers> {
                   flag = true;
                 }
               });
-            }, child: Text('Animate',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color: Colors.blue),))
+            }, child: const Text('Animate',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color: Colors.blue),))
           ],
         ),
       ),
