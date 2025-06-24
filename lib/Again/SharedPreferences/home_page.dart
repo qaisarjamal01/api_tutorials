@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home Page'),
+        title: const Text('Home Page'),
         centerTitle: true,
         backgroundColor: Colors.blue,
       ),
@@ -23,8 +23,8 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
+            const Padding(
+              padding: EdgeInsets.all(8.0),
               child: Icon(Icons.home,size: 100,),
             ),
             Padding(
@@ -34,8 +34,8 @@ class _HomePageState extends State<HomePage> {
                 var prefs = await SharedPreferences.getInstance();
                 prefs.setBool(SplashScreenState.KEYLOGIN, false);
 
-                Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => SharedPrefLogin()));
-              }, child: Text('Logout')),
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const SharedPrefLogin()));
+              }, child: const Text('Logout')),
             )
           ],
         ),
