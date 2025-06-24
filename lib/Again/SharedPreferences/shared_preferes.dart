@@ -76,4 +76,3 @@ class _SharedPreferState extends State<SharedPrefer> {
     });
   }
 }
-
