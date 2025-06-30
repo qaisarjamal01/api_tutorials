@@ -25,7 +25,7 @@ class SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blue.shade50,
-      body: Center(child: Icon(Icons.account_circle,size: 100,)),
+      body: const Center(child: Icon(Icons.account_circle,size: 100,)),
     );
   }
 
@@ -33,15 +33,15 @@ class SplashScreenState extends State<SplashScreen> {
     var prefs = await SharedPreferences.getInstance();
     var isLoggedIn = prefs.getBool(KEYLOGIN);
 
-    Timer(Duration(seconds: 2), (){
+    Timer(const Duration(seconds: 2), (){
       if(isLoggedIn != null){
         if(isLoggedIn){
-          Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => HomePage()));
+          Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const HomePage()));
         }else{
-          Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => SharedPrefLogin()));
+          Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const SharedPrefLogin()));
         }
       }else{
-        Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => SharedPrefLogin()));
+        Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const SharedPrefLogin()));
       }
     });
   }

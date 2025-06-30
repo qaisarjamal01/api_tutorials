@@ -25,7 +25,7 @@ class _SharedPreferState extends State<SharedPrefer> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Shared preferences'),
+        title: const Text('Shared preferences'),
         centerTitle: true,
         backgroundColor: Colors.blue,
       ),
@@ -55,11 +55,11 @@ class _SharedPreferState extends State<SharedPrefer> {
               var prefs = await SharedPreferences.getInstance();
               prefs.setString(KEYNAME, name);
 
-            }, child: Text('Save',style: TextStyle(fontSize: 20),)),
+            }, child: const Text('Save',style: TextStyle(fontSize: 20),)),
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Text(nameValue,style: TextStyle(fontSize: 15),),
+            child: Text(nameValue,style: const TextStyle(fontSize: 15),),
           )
         ],
       ),
